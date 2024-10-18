@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Retrokia Caps Rough';
+    /* Name your font family */
+    src: url('fonts/Retrokia/Retrokia Caps Rough.ttf');
+    /* Locate the .ttf file within your directory*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* smooth scrolling */
+}
+
+body {
+    font-family: "Retrokia Caps Rough";
+    height: fit-content !important;
+}
+
+
+/*nav bar*/
+    .nav-bar {
+        background-color: white;
+        height: 80px;
+        /* keeps nav bar at top always */
+        position: fixed;
+        width: 100%;
+        /* nav bar will resize to screen */
+        top: 0;
+        /* places nav bar at top of all objects */
+        z-index: 100;
+        filter: drop-shadow(1px 1px 8px rgb(0, 0, 0, 0.3));
+    }
+
+    #logo {
+        height: 3.8vw;
+        margin: 1vw 5vw 5vw 4.2vw;
+    }
+
+    nav ul {
+        float: right;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        color: #54C7C1;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav-bar-text a:hover {
+        color: #eab91a;
+        transition: 0.4s;
+    }
+
+    .check-btn {
+        font-size: 30px;
+        color: #54C7C1;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #drop-shadow {
+        width: 100%;
+        height: 4px;
+        z-index: 101;
+        position: fixed;
+        top: 78px;
+        background: #54C7C1;
+        filter: drop-shadow(1px 1px 8px rgb(0, 0, 0, 0.3));
+    }
+
+/**/
+
+/* typography styling */
+    /* headings */
+    h1 {
+        font-family: "Retrokia Caps Rough";
+        font-size: 4.4vw;
+        /* vw to automatically resize */
+        color: #ffff;
+    }
+    h2 {
+        font-family: "Retrokia Caps Rough";
+        font-size: 3.5vw;
+        color: #54C7C1;
+        text-align: center;
+    }
+    h3 {
+        font-family: "Retrokia Caps Rough";
+        font-size: 4.2vw;
+        color: #54C7C1;
+    }
+    /* body copy */
+    p {
+        font-family: "Cabin";
+        font-size: 1.6vw;
+        color: #413D3D;
+        margin-top: -30px;
+        /* gets rid of the automatic margins on body text */
+    }
+/**/
+
+/* button styling */
+    button {
+        font-family: "Retrokia Caps Rough";
+        font-size: 1.3vw;
+        background-color: #54C7C1;
+        color: #ffff;
+        padding: 2vw;
+        padding-top: 1.2vw;
+        border-radius: 2vw;
+        height: 4.5vw;
+        border: none;
+        filter: drop-shadow(5px 5px 8px rgb(0, 0, 0, 0.2));
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #eab91a;
+        font-size: 1.2vw;
+    }
+/**/
+
+/* image styling */
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+.img-container img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+/**/
+
+/* Section 1*/
+    /* hero */
+        .hero-1-container {
+            width: 76%;
+            height: 42vw;
+            /* image size */
+            border-radius: 5vw;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            filter: brightness(0.9);
+            margin-top: 130px;
+            margin-bottom: 10%;
+        }
+
+        .caption {
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .caption-container {
+            position: relative;
+        }
+
+        .nav-bar-text {
+            z-index: 98;
+        }
+
+    /* decoration */
+        #sun {
+            height: 9vw;
+            position: absolute;
+            /* stars placed ontop of section */
+            z-index: 2;
+            top: -5%;
+            left: 10%;
+        }
+        #scribble {
+            height: 10vw;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 8%;   
+        }
+    /**/
+/**/
+
+/* Section 2*/
+.leaves-container img {
+    height: 110%;
+}
+.clean-up-container img {
+    height: 110%;
+    width: 100%;
+}
+.leaves-container {
+    left: 10%;
+    width: 24vw;
+    height: 34vw;
+    border-radius: 3vw;
+}
+.clean-up-container {
+    width: 20vw;
+    height: 28vw;
+    left: 22%;
+    margin-top: 5%;
+    border-radius: 4vw;
+    z-index: 2;
+}
+
+#about-text {
+    width: 50%;
+    position: absolute;
+    right: 7%;
+    margin-top: 5%;
+}
+#about-text h2 {
+    text-align: left;
+    margin-bottom: 4vw;
+}
+
+/**/
+
+/* Section 3*/
+/**/
+
+.wave-container {
+    margin-top: -30%;
+    z-index: -10;
+}
+
+#cream-wave-top {
+    background-color: #FFF8F0;
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 57.67%, 1.00% 57.55%, 2.00% 57.20%, 3.00% 56.63%, 
+    4.00% 55.86%, 5.00% 54.92%, 6.00% 53.84%, 7.00% 52.66%, 8.00% 51.42%, 9.00% 50.16%, 10.00% 48.94%, 
+    11.00% 47.79%, 12.00% 46.75%, 13.00% 45.86%, 14.00% 45.16%, 15.00% 44.66%, 16.00% 44.39%, 17.00% 
+    44.35%, 18.00% 44.54%, 19.00% 44.97%, 20.00% 45.61%, 21.00% 46.44%, 22.00% 47.43%, 23.00% 48.55%, 
+    24.00% 49.75%, 25.00% 51.00%, 26.00% 52.25%, 27.00% 53.45%, 28.00% 54.57%, 29.00% 55.56%, 30.00% 56.39%, 
+    31.00% 57.03%, 32.00% 57.46%, 33.00% 57.65%, 34.00% 57.61%, 35.00% 57.34%, 36.00% 56.84%, 37.00% 56.14%, 
+    38.00% 55.25%, 39.00% 54.21%, 40.00% 53.06%, 41.00% 51.84%, 42.00% 50.58%, 43.00% 49.34%, 44.00% 48.16%, 
+    45.00% 47.08%, 46.00% 46.14%, 47.00% 45.37%, 48.00% 44.80%, 49.00% 44.45%, 50.00% 44.33%, 51.00% 44.45%, 
+    52.00% 44.80%, 53.00% 45.37%, 54.00% 46.14%, 55.00% 47.08%, 56.00% 48.16%, 57.00% 49.34%, 58.00% 50.58%, 
+    59.00% 51.84%, 60.00% 53.06%, 61.00% 54.21%, 62.00% 55.25%, 63.00% 56.14%, 64.00% 56.84%, 65.00% 57.34%, 
+    66.00% 57.61%, 67.00% 57.65%, 68.00% 57.46%, 69.00% 57.03%, 70.00% 56.39%, 71.00% 55.56%, 72.00% 54.57%, 
+    73.00% 53.45%, 74.00% 52.25%, 75.00% 51.00%, 76.00% 49.75%, 77.00% 48.55%, 78.00% 47.43%, 79.00% 46.44%, 
+    80.00% 45.61%, 81.00% 44.97%, 82.00% 44.54%, 83.00% 44.35%, 84.00% 44.39%, 85.00% 44.66%, 86.00% 45.16%, 87.00% 45.86%, 
+    88.00% 46.75%, 89.00% 47.79%, 90.00% 48.94%, 91.00% 50.16%, 92.00% 51.42%, 93.00% 52.66%, 94.00% 53.84%, 95.00% 54.92%, 
+    96.00% 55.86%, 97.00% 56.63%, 98.00% 57.20%, 99.00% 57.55%, 100.00% 57.67%);
+}
+#cream-wave {
+    position: absolute;
+    background-color: #FFF8F0;
+    width: 100%;
+    margin-top: 80vw;
+    height: 90vw;
+}
+#cream-wave-bottom {
+    margin-top: 150vw;
+    height: 50vw;
+    background-color: #FFF8F0;
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 57.67%, 1.00% 57.55%, 2.00% 57.20%, 3.00% 56.63%, 4.00% 55.86%, 5.00% 54.92%, 6.00% 53.84%, 7.00% 52.66%, 8.00% 51.42%, 9.00% 50.16%, 10.00% 48.94%, 11.00% 47.79%, 12.00% 46.75%, 13.00% 45.86%, 14.00% 45.16%, 15.00% 44.66%, 16.00% 44.39%, 17.00% 44.35%, 18.00% 44.54%, 19.00% 44.97%, 20.00% 45.61%, 21.00% 46.44%, 22.00% 47.43%, 23.00% 48.55%, 24.00% 49.75%, 25.00% 51.00%, 26.00% 52.25%, 27.00% 53.45%, 28.00% 54.57%, 29.00% 55.56%, 30.00% 56.39%, 31.00% 57.03%, 32.00% 57.46%, 33.00% 57.65%, 34.00% 57.61%, 35.00% 57.34%, 36.00% 56.84%, 37.00% 56.14%, 38.00% 55.25%, 39.00% 54.21%, 40.00% 53.06%, 41.00% 51.84%, 42.00% 50.58%, 43.00% 49.34%, 44.00% 48.16%, 45.00% 47.08%, 46.00% 46.14%, 47.00% 45.37%, 48.00% 44.80%, 49.00% 44.45%, 50.00% 44.33%, 51.00% 44.45%, 52.00% 44.80%, 53.00% 45.37%, 54.00% 46.14%, 55.00% 47.08%, 56.00% 48.16%, 57.00% 49.34%, 58.00% 50.58%, 59.00% 51.84%, 60.00% 53.06%, 61.00% 54.21%, 62.00% 55.25%, 63.00% 56.14%, 64.00% 56.84%, 65.00% 57.34%, 66.00% 57.61%, 67.00% 57.65%, 68.00% 57.46%, 69.00% 57.03%, 70.00% 56.39%, 71.00% 55.56%, 72.00% 54.57%, 73.00% 53.45%, 74.00% 52.25%, 75.00% 51.00%, 76.00% 49.75%, 77.00% 48.55%, 78.00% 47.43%, 79.00% 46.44%, 80.00% 45.61%, 81.00% 44.97%, 82.00% 44.54%, 83.00% 44.35%, 84.00% 44.39%, 85.00% 44.66%, 86.00% 45.16%, 87.00% 45.86%, 88.00% 46.75%, 89.00% 47.79%, 90.00% 48.94%, 91.00% 50.16%, 92.00% 51.42%, 93.00% 52.66%, 94.00% 53.84%, 95.00% 54.92%, 96.00% 55.86%, 97.00% 56.63%, 98.00% 57.20%, 99.00% 57.55%, 100.00% 57.67%);
+}
+
+#what-text {
+    width: 50%;
+    left: 7%;
+    position: absolute;
+    z-index: 2;
+    top: 265%;
+}
+#what-text h2 {
+    text-align: left;
+    margin-bottom: 4vw;
+}
+#blue-background {
+    background-color: #D8EDFF;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+    top: 250%;
+}
+
+#question-mark {
+    height: 18vw;
+    position: absolute;
+    z-index: 4;
+    top: 300%;
+    left: 75%;
+}
+
+/* Section 4*/
+/**/
+.why-container {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 352%;
+}
+#why-text {
+    position: absolute;
+    text-align: center;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hashtag {
+    height: 18vw;
+    position: absolute;
+    z-index: 4;
+    top: 595%;
+    left: 5%;
+}
+
+.action-container {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 500%;
+}
+#action-text {
+    position: absolute;
+    left: 10%;
+}
+#action-text h2 {
+    text-align: left;
+    margin-bottom: 4vw;
+}
+
+#blue-background-2 {
+    background-color: #D8EDFF;
+    width: 100%;
+    height: 135%;
+    position: absolute;
+    z-index: 1;
+    top: 600%;
+}
+
+.inspire-container {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 620%;
+}
+#inspire-text {
+    margin-top: 3vh;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#inspire-text h2 {
+    margin-bottom: 4vw;
+}
+
+/* Footer */
+/**/
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width: 950px) {
+    label #logo {
+        height: 50px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+*/
+
+@media (max-width: 858px) {
+
+    .check-btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: #54C7C1;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 60px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #eab91a;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+
+
+}
